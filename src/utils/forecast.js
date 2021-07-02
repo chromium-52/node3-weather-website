@@ -18,9 +18,13 @@ const forecast = (latitude, longitude, callback) => {
         body.current.weather[0].description +
           '. It is currently ' +
           body.current.temp +
-          ' degrees out. There is ' +
+          ' degrees out. The wind speed is ' +
+          body.current.wind_speed +
+          ' mph at an angle of ' +
+          body.current.wind_deg +
+          ' degrees. There is ' +
           body.current.clouds +
-          '% cloud coverage'
+          '% cloud coverage.'
       );
     }
   });
